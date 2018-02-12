@@ -242,8 +242,8 @@ print(output.select("features", "AT").first())
 # Let's cache these datasets for performance
 testSet = split20.cache()
 trainingSet = split80.cache()
-print "Test count: ", testSet.count()
-print "Training count: ", trainingSet.count()
+print "Test data count: ", testSet.count()
+print "Training data count: ", trainingSet.count()
 
 # COMMAND ----------
 
