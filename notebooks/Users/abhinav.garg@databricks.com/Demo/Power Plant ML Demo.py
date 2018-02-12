@@ -138,6 +138,11 @@ df.write.saveAsTable("power_plant")
 
 # COMMAND ----------
 
+# MAGIC %sql 
+# MAGIC DESCRIBE EXTENDED power_plant
+
+# COMMAND ----------
+
 # MAGIC %md **Schema Definition**
 # MAGIC 
 # MAGIC Our schema definition from UCI appears below:
