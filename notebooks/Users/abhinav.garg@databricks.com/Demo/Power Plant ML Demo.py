@@ -138,11 +138,6 @@ df.write.saveAsTable("power_plant")
 
 # COMMAND ----------
 
-# MAGIC %sql 
-# MAGIC DESCRIBE EXTENDED power_plant
-
-# COMMAND ----------
-
 # MAGIC %md **Schema Definition**
 # MAGIC 
 # MAGIC Our schema definition from UCI appears below:
@@ -242,8 +237,8 @@ print(output.select("features", "AT").first())
 # Let's cache these datasets for performance
 testSet = split20.cache()
 trainingSet = split80.cache()
-print "Test data count: ", testSet.count()
-print "Training data count: ", trainingSet.count()
+print "Test count: ", testSet.count()
+print "Training count: ", trainingSet.count()
 
 # COMMAND ----------
 
